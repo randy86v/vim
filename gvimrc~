@@ -8,5 +8,13 @@ set guioptions+=i         " Use VIM icon
 set guioptions-=r         " Removes right hand scroll bar
 set go-=L                 " Removes left hand scroll bar
 
+let g:NERDTreeWinPos = "right"
+
 set lines=42 columns=84
 
+:set cpoptions+=$ " puts a $ marker for the end of words/lines in cw/c$ commands
+
+" keymap for ack plugin
+nnoremap <leader>a :Ack<space>
+
+map <F2> :NERDTreeToggle<CR>

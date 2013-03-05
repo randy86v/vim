@@ -1,0 +1,35 @@
+call pathogen#infect()
+call pathogen#helptags()
+
+" Load VIM in nocompatible mode to use enhanced features
+" This must be first, because it changes other options as side effect
+set nocompatible
+
+set hidden                      " Handle multpile buffers better
+
+set textwidth=80                " tw to specify a default text width
+
+set history=100		              " Keep 100 lines of command line history
+ 
+set number                      " Show line numbers
+
+filetype plugin indent on       " Enable filetype plugin and indentation
+
+" Visual Enhancement
+colorscheme railscasts
+syntax on                       " Enable syntax highlighting
+set cursorline                  " Highlight the cursor line
+set showmatch                   " Highlight matching bracets
+set magic                       " Set magic on, for regular expressions
+
+" Tabs and indentation
+set expandtab                   " Use spaces instead if tabs
+set autoindent                  " Auto indent
+set smartindent                 " Smart indent
+set shiftwidth=2                " Maintain 2 level indentation
+set tabstop=2                   " 2 level indentation for Tab
+set wrap linebreak textwidth=0  " Wrap lines
+
+set virtualedit=all             " allow you to walk thru virtual spaces
+
+set runtimepath^=~/.vim/bundle/ctrlp.vim
