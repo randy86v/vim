@@ -9,7 +9,7 @@ set hidden                      " Handle multpile buffers better
 
 set textwidth=80                " tw to specify a default text width
 
-set history=1000	              " Keep 100 lines of command line history
+set history=1000	              " Keep 1000 lines of command line history
  
 set number                      " Show line numbers
 
@@ -32,7 +32,7 @@ set showmatch                   " Highlight matching brackets
 set magic                       " Set magic on, for regular expressions
 
 " Tabs and indentation
-set expandtab                   " Use spaces instead if tabs
+set expandtab                   " Use spaces instead of tabs
 set autoindent                  " Auto indent
 set smartindent                 " Smart indent
 set shiftwidth=2                " Maintain 2 level indentation
@@ -65,3 +65,7 @@ map <F3> :BufExplorer<CR>
 
 " keymap for :UltisnipsEdit
 nnoremap <leader>u :UltiSnipsEdit<CR>
+
+" keymap for saving file
+imap <leader><F4> <ESC>:w<CR>
+map <leader><F4> :w<CR>
